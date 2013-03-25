@@ -1,0 +1,72 @@
+/*------------------------------------------------------------------
+[2. Navbar / .navbar]
+*/
+.navbar-inverse .navbar-inner {
+  padding: 7px 0;
+}
+
+.navbar-fixed-top {
+  position: relative;
+}
+/*------------------------------------------------------------------
+[3. Subnavbar / .subnavbar]
+*/
+.subnavbar {
+  .subnavbar-inner {
+    height: 80px;
+    background: #1d354d;
+    .box-shadow(inset 0 1px 0 #28496b);
+    .container-fluid{
+      padding:0;
+      ul {
+        display: inline-block;
+        height: 80px;
+        padding: 0;
+        margin: 0;
+        border-right: 1px solid #0f2132;
+        li{
+          float: left;
+          min-width: 90px;
+          height: 80px;
+          padding: 0;
+          margin: 0;
+          text-align: center;
+          list-style: none;
+          border-left: 1px solid #0f2132;
+          a{
+            #gradient > .vertical(#24415f, #172b3e);
+            color: #ffffff;
+            display: block;
+            height: 100%;
+            padding: 0 15px;
+            font-size: 12px;
+            font-weight: bold;
+            text-shadow: 0px 1px 1px rgba(51,51,51,0.1);
+            i{
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-top: 17px;
+              margin-bottom: .25em;
+              font-size: 28px;
+            }
+            &:hover{
+              #gradient > .vertical(#1e3751, #16283a);
+              color: #fff;
+              text-decoration: none;
+            }
+            span{
+              display: block;
+            }
+          }
+          &.active{
+             a{
+               background: #fff;
+               color: #192d42;
+             }
+          }
+        }
+      }
+    }
+  }
+}

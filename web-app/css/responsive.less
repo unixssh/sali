@@ -1,0 +1,60 @@
+@import "libs/responsive.less";
+@import "libs/jasny-responsive.less";
+/*=========================================================== Responsive SubNav ==========================================================*/
+@media (max-width: 767px) {
+  .subnavbar {
+    margin-left: -20px;
+    margin-right: -20px;
+    .subnavbar-inner {
+      height: auto;
+
+      .container-fluid{
+        ul {
+          width: 100%;
+          height: auto;
+          border: none;
+          li {
+            width: 33%;
+            height: 70px;
+            margin-bottom: 0;
+            border: none;
+            a {
+              color: @grayLight;
+              background: transparent;
+              i {
+                display: inline-block;
+                margin-bottom: 0;
+                font-size: 20px;
+              }
+
+              &:hover{
+                color:#fff;
+                background: transparent;
+              }
+            }
+            &.active {
+              a {
+                font-size: 11px;
+                background: transparent;
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 979px) {
+  .navbar-fixed-top {
+    position: static;
+    margin-bottom: 0;
+  }
+
+  .subnavbar {
+    .container-fluid{
+      width: auto;
+    }
+  }
+}

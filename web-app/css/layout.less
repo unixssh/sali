@@ -1,0 +1,120 @@
+/*======================================================================================================================================================*/
+/*======================================================================= Layout =======================================================================*/
+/********************************************************************************************************************************************************/
+/*===================================== Libs =====================================*/
+@import "libs/bootstrap";
+@import "libs/jasny-bootstrap";
+@import "libs/tools";
+/*---------------------------------------------------------------------------------------------*/
+/*===================================== General =====================================*/
+body {
+  background-color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+}
+li, a, a>b{
+  outline:none !important;
+  .transition(all 0.3s ease-in-out);
+}
+/*---------------------------------------------------------------------------------------------*/
+/*===================================== Responsive Imports =====================================*/
+@import "navs";
+@import "responsive";
+/*---------------------------------------------------------------------------------------------*/
+/*===================================== Breadcrumbs =====================================*/
+.breadcrumb {
+  margin: -20px 0px;
+  border: 0px;
+  color: #aaa;
+  background: transparent;
+  cursor: default;
+  .box-shadow(none);
+  .border-radius(2px);
+  span {
+    text-shadow: 1px 1px 0px #fff;
+  }
+  a {
+    color: #aaa;
+    text-shadow: 0px 1px 1px #fff;
+    &:hover{
+      color: #646464;
+      text-shadow: 0px 1px 1px #fff;
+      text-decoration: none;
+    }
+  }
+}
+/*---------------------------------------------------------------------------------------------*/
+/*===================================== Boxes =====================================*/
+.box {
+  .box-header {
+    height: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: -1px;
+    padding: 10px;
+    #gradient > .vertical(#fafafa, #efefef);
+    .box-shadow(none);
+    .border-radius(2px 2px 0px 0px);
+    overflow: hidden;
+    h2{
+      font-size: 16px;
+      line-height: 16px;
+      float:left;
+      margin-top: 2px;
+      color: #646464;
+      font-weight: normal;
+      text-shadow: 0px 1px 0px #fff;
+      i{
+        margin: 1px 3px 0px 5px;
+        opacity: .4;
+      }
+    }
+    .break{
+      border-left: 1px solid #fcfcfc;
+      border-right: 1px solid #ddd;
+      margin: -12px 10px -10px 10px;
+      padding: 12px 0px 10px 0px;
+    }
+    .box-icon{
+      float:right;
+      margin-top: 1px;
+      i{
+        opacity: .4;
+        &:hover{
+          opacity: .8;
+        }
+      }
+      a{
+        margin: 0px 5px;
+      }
+    }
+  }
+  .box-content {
+    margin-top: -1px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fcfcfc;
+    .border-radius(0px 0px 2px 2px);
+    .box-shadow(0 1px 0px rgba(255, 255, 255, .6));
+  }
+}
+/*---------------------------------------------------------------------------------------------*/
+.user-vCard{
+  img{
+    position: relative;
+    z-index: 0;
+  }
+
+  .change-foto, .browse-foto{
+    position: relative;
+    z-index: 1;
+    margin: -27px 5px;
+    display: none;
+  }
+
+  &:hover{
+    .change-foto, .browse-foto{
+      display: block;
+    }
+  }
+}
+/*---------------------------------------------------------------------------------------------*/
