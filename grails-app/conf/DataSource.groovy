@@ -14,8 +14,8 @@ environments {
         dataSource {
             dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:mysql://mysql-gestiunesali.jelastic.dogado.eu/sali?useUnicode=yes&characterEncoding=UTF-8"
-            username = "sali"
-            password = "sali"
+            username = ""
+            password = ""
         }
     }
     test {
@@ -27,9 +27,9 @@ environments {
     production {
         dataSource {
             dbCreate = "create" // one of 'create', 'create-drop', 'update', 'validate', ''
-            url = "jdbc:mysql://mysql-gestiunesali.jelastic.dogado.eu/sali?useUnicode=yes&characterEncoding=UTF-8"
-            username = "sali"
-            password = "sali"
+            url = "jdbc:mysql://"
+            username = ""
+            password = ""
         }
     }
 }
